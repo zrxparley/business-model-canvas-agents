@@ -75,6 +75,18 @@ BMC 的本质不是 9 个孤立的格子，而是一张咬合的齿轮图。
 
 ---
 
+## 🚀 快速开始（3 个最常用命令）
+
+```bash
+/bmc 完整诊断    # 全面体检（1-2 小时）
+/bmc 拍砖        # 新想法快速验证（10-15 分钟）
+/bmc 客户需求    # 客户洞察 + JTBD（20-30 分钟）
+```
+
+**完整命令手册**：见 [docs/commands.md](./docs/commands.md)（7 个核心命令 + 10 个快捷命令 + 3 个上下文命令）
+
+---
+
 ## 🚀 三种使用方式
 
 ### 方式 1 · 🎯 完整诊断（重大决策用）
@@ -139,6 +151,7 @@ BMC 的本质不是 9 个孤立的格子，而是一张咬合的齿轮图。
 ## 📚 文档导航
 
 - [完整工作流](./workflows/full-diagnosis-workflow.md)
+- [触发命令手册](./docs/commands.md) ⭐
 - [任务卡模板](./templates/task-card.md)
 - [输出模板库](./templates/output-templates.md)
 - [示例：AI 简历优化订阅服务](./examples/ai-resume-service.md)
