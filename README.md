@@ -139,10 +139,10 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A[更多用户] -->|"产生"| B[更多数据]
-    B -->|"优化"| C[更好体验]
-    C -->|"驱动"| D[更高复购]
-    D -->|"带来"| A
+    A[更多用户] --> B[更多数据]
+    B --> C[更好体验]
+    C --> D[更高复购]
+    D --> A
     style A fill:#fef3c7
     style C fill:#dcfce7
 ```
