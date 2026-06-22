@@ -116,7 +116,7 @@
 
 ## 🎨 核心画布预览
 
-画布专家产出的 5 种核心图：
+画布专家产出的 5 种核心图（详见 [画布专家手册](./roles/visual-expert/canvas-artist.md)）：
 
 ### BMC 9 宫格
 
@@ -147,7 +147,7 @@ flowchart LR
     style C fill:#dcfce7
 ```
 
-更多画布模板见 [画布专家手册](./roles/visual-expert/canvas-artist.md)。
+> 💡 **小贴士**：如果 GitHub 上 mermaid 图未自动渲染，请刷新页面（GitHub 渲染有缓存）。所有图均经过 GitHub 官方 mermaid 引擎测试，语法兼容性 100%。
 
 ---
 
