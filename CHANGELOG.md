@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2] - 2026-06-22
+
+### Fixed
+- README 中 BMC 9 宫格 mermaid 图重写
+  - 移除嵌套 `subgraph`（GitHub mermaid 渲染器对中文 subgraph 支持有限）
+  - 改用扁平化节点 + 直接箭头
+  - 保留视觉高亮（VP 焦点节点、RS / CST 色彩区分）
+
 ## [1.2.1] - 2026-06-22
 
 ### Fixed

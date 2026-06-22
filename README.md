@@ -122,24 +122,17 @@
 
 ```mermaid
 flowchart LR
-    subgraph 需求侧
-        CS[客户细分] --> CH[渠道通路] --> CR[客户关系]
-    end
-    VP[价值主张]
-    subgraph 供给侧
-        KR[关键资源] --> KA[关键活动] --> KP[重要合作]
-    end
-    subgraph 财务层
-        RS[收入来源] --> CST[成本结构]
-    end
-    CS --> VP
-    CH --> VP
-    KR --> VP
-    KA --> VP
-    VP --> CR
-    VP --> RS
-    KP --> KA
-    KA --> CST
+    CS[客户细分] --> VP[价值主张]
+    CH[渠道通路] --> VP
+    KR[关键资源] --> VP
+    KA[关键活动] --> VP
+    VP --> CR[客户关系]
+    VP --> RS[收入来源]
+    KP[重要合作] --> KA
+    KA --> CST[成本结构]
+    style VP fill:#fef3c7,stroke:#f59e0b,stroke-width:3px
+    style RS fill:#dcfce7
+    style CST fill:#fee2e2
 ```
 
 ### 增长飞轮
