@@ -1,18 +1,23 @@
-# 🎯 Business Model Canvas Agents · 14 角色天团
+# 🎯 Business Model Canvas Agents
 
 > **一个由 14 个虚拟专家组成的虚拟团队，专门做商业模式画布（Business Model Canvas）的深度诊断。**
 
-不是 9 个孤立的模块分析，而是一个**立体的诊断体系**：
-- **9 个垂直专家**深挖每个模块
-- **3 个横向专家**穿透可行性三角
-- **1 个画布专家**用 mermaid 视觉翻译
-- **1 个总指挥**整合输出
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.1.0-blue.svg)](./CHANGELOG.md)
+[![Roles](https://img.shields.io/badge/Experts-14_角色-green.svg)](#-14-角色天团)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](#-贡献)
 
 ---
 
-## 🌟 核心理念
+## 🧠 一句话定义
 
-BMC 的本质不是 9 个孤立的格子，而是一张咬合的齿轮图。
+**BMC 不只是 9 个格子，而是一张咬合的齿轮图。**
+
+本天团 = 9 个模块专家 + 3 个可行性穿透 + 1 个咬合度审查 + 1 个视觉翻译 = **立体的商业诊断体系**。
+
+---
+
+## 🏗️ 架构全景
 
 ```
           客户需求（想不想买？）
@@ -23,102 +28,30 @@ BMC 的本质不是 9 个孤立的格子，而是一张咬合的齿轮图。
                   │
                   ↓
             9 模块基础分析（是什么？）
+                  │
+                  ↓
+            🔬 咬合度检查
+                  │
+                  ↓
+            🎨 视觉翻译
+                  │
+                  ↓
+              📋 诊断书
 ```
 
-**90% 的商业模式失败，不是因为单个模块差，而是模块之间不咬合。**
-
-本天团的设计就是为了解决这个核心问题。
-
 ---
 
-## 👥 14 角色天团
+## 🚀 快速开始（30 秒上手）
 
-### 🎖️ 顶层协调
-
-| 角色 | 职责 |
-|------|------|
-| [总指挥 PMO](./roles/orchestrator/PMO.md) | 任务拆解、冲突裁决、最终整合输出 |
-
-### 🌍 横向穿透 · 可行性三角
-
-| 角色 | 切入口 | 核心追问 |
-|------|--------|---------|
-| [市场可行性专家](./roles/horizontal-experts/market-feasibility.md) | 重要合作 | 商业模式在当前市场环境下能不能搭起来？ |
-| [交付可行性专家](./roles/horizontal-experts/delivery-feasibility.md) | 成本结构 | 现金流撑不撑得住？飞轮转不转得起来？ |
-| [客户需求分析专家](./roles/horizontal-experts/customer-needs.md) | 客户细分 | 客户真想买吗？他在雇产品完成哪个 Job？ |
-
-### 🧩 垂直深挖 · 9 模块专家
-
-| # | 角色 | 模块 | 切入口 |
-|---|------|------|--------|
-| 1 | [客户细分专家 CS](./roles/vertical-experts/customer-segments.md) | CS | 我们到底在为谁服务？ |
-| 2 | [价值主张专家 VP](./roles/vertical-experts/value-propositions.md) | VP | 客户凭什么选你不选别人？ |
-| 3 | [渠道通路专家 CH](./roles/vertical-experts/channels.md) | CH | 客户怎么知道我们？怎么买到？ |
-| 4 | [客户关系专家 CR](./roles/vertical-experts/customer-relationships.md) | CR | 买完之后如何留存、复购、推荐？ |
-| 5 | [收入来源专家 RS](./roles/vertical-experts/revenue-streams.md) | RS | 钱从哪里来？用什么姿势收？ |
-| 6 | [关键资源专家 KR](./roles/vertical-experts/key-resources.md) | KR | 这个模式跑起来，必须拥有什么？ |
-| 7 | [关键活动专家 KA](./roles/vertical-experts/key-activities.md) | KA | 必须做对哪些事？ |
-| 8 | [重要合作专家 KP](./roles/vertical-experts/key-partnerships.md) | KP | 谁必须站我们这边？ |
-| 9 | [成本结构专家 CST](./roles/vertical-experts/cost-structure.md) | CST | 钱烧在哪？哪里能优化？ |
-
-### 🔬 咬合度检查
-
-| 角色 | 职责 |
-|------|------|
-| [逻辑审查官 Coherence Auditor](./roles/orchestrator/coherence-auditor.md) | 模块间一致性、漏洞扫描、风险预警 |
-
-### 🎨 视觉翻译
-
-| 角色 | 职责 |
-|------|------|
-| [画布专家 Canvas](./roles/visual-expert/canvas-artist.md) | 用 mermaid 把诊断结果可视化 |
-
----
-
-## 🚀 快速开始（3 个最常用命令）
+**3 个最常用命令**：
 
 ```bash
-/bmc 完整诊断    # 全面体检（1-2 小时）
-/bmc 拍砖        # 新想法快速验证（10-15 分钟）
-/bmc 客户需求    # 客户洞察 + JTBD（20-30 分钟）
+/bmc 完整诊断    # 全面体检（1-2 小时）→ 7 件套诊断书
+/bmc 拍砖        # 新想法快速验证（10-15 分钟）→ 可行性三角评分
+/bmc 客户需求    # 客户洞察 + JTBD（20-30 分钟）→ 客户旅程地图
 ```
 
-**完整命令手册**：见 [docs/commands.md](./docs/commands.md)（7 个核心命令 + 10 个快捷命令 + 3 个上下文命令）
-
----
-
-## 🚀 三种使用方式
-
-### 方式 1 · 🎯 完整诊断（重大决策用）
-**适用**：新业务上线前、季度复盘、融资前自检、转型期模式重构
-
-**工作流**：
-```
-老板提交业务背景 → 总指挥拆解 → 9 模块专家并行深挖
-                                    ↓
-              3 可行性专家横向穿透 → 逻辑审查官咬合检查
-                                    ↓
-                  画布专家可视化 → 总指挥整合输出
-```
-
-### 方式 2 · 🔍 专项诊断（按需点将）
-**适用**：具体问题快速突破
-
-**快捷调用**：
-
-| 你的问题 | 召唤这些专家 |
-|---------|------------|
-| "这个市场能不能进？" | 市场可行性 + KP + CH |
-| "我这个生意能不能赚到钱？" | 交付可行性 + RS + CST |
-| "客户到底为什么要买？" | 客户需求分析 + CS + VP |
-| "渠道该不该换？" | CH + CR |
-| "该不该涨价？" | RS + 客户需求分析专家 |
-| "这个合作能不能签？" | KP + 市场可行性专家 |
-
-### 方式 3 · 🚀 灵感触发（创意阶段）
-**适用**：还在探索业务方向，没有定下来
-
-**轻量调用**：只召唤 3 个可行性专家快速拍砖。
+**完整命令手册**：👉 [docs/commands.md](./docs/commands.md)（7 核心 + 10 快捷 + 3 上下文）
 
 ---
 
@@ -126,56 +59,184 @@ BMC 的本质不是 9 个孤立的格子，而是一张咬合的齿轮图。
 
 每次完整诊断，老板会拿到：
 
-| # | 交付物 | 内容 |
-|---|--------|------|
-| 1 | 📊 BMC 画布 | 9 宫格可视化 |
-| 2 | 🧩 9 模块分析卡 | 每个模块的深度解读 |
-| 3 | 🌍 市场可行性报告 | 合作切入的市场评估 |
-| 4 | ⚙️ 交付可行性报告 | 成本切入的飞轮分析 |
-| 5 | 🎯 客户需求洞察报告 | 客户切入的 JTBD 分析 |
-| 6 | 🔬 健康度报告 | 模块咬合度 + 风险清单 |
-| 7 | 📋 总指挥诊断书 | 优化建议 + 优先级路径 |
+| # | 交付物 | 内容 | 一句话用途 |
+|---|--------|------|----------|
+| 1 | 📊 **BMC 画布** | 9 宫格可视化 | 一页纸讲清商业模式 |
+| 2 | 🧩 **9 模块分析卡** | 每模块深度解读 | 单点细节追问 |
+| 3 | 🌍 **市场可行性报告** | 合作切入的市场评估 | 判断「能不能搭」 |
+| 4 | ⚙️ **交付可行性报告** | 成本切入的飞轮分析 | 判断「能不能跑」 |
+| 5 | 🎯 **客户需求洞察报告** | 客户切入的 JTBD 分析 | 判断「想不想买」 |
+| 6 | 🔬 **健康度报告** | 模块咬合度 + 风险清单 | 判断「哪里有坑」 |
+| 7 | 📋 **总指挥诊断书** | 优化建议 + 优先级路径 | 行动指南 |
 
 ---
 
-## 🎓 设计哲学
+## 👥 14 角色天团
 
-1. **垂直 + 横向双视角**：每个模块既被垂直深挖，又被横向穿透
-2. **可行性三角**：客户需求 × 市场可行性 × 交付可行性 = 真伪判断
-3. **视觉优先**：复杂结论必须可视觉化，画布专家只翻译不创造
-4. **纪律明确**：每个角色有清晰的"输入/输出/陷阱"，避免角色越界
-5. **咬合度检查**：逻辑审查官作为独立裁判，保证整体逻辑一致
+### 🎖️ 顶层协调（2 角色）
+
+| 角色 | 职责 | 工作准则 |
+|------|------|---------|
+| **总指挥 PMO** | 任务拆解 · 冲突裁决 · 最终整合 | [📄](./roles/orchestrator/PMO.md) |
+| **逻辑审查官** | 模块咬合度检查 · 风险预警 | [📄](./roles/orchestrator/coherence-auditor.md) |
+
+### 🌍 横向穿透 · 可行性三角（3 角色）
+
+> 从特定模块切入，**透视整个商业模式**的可行性。
+
+| 角色 | 切入口 | 核心追问 | 工作准则 |
+|------|--------|---------|---------|
+| **市场可行性专家** | 重要合作 | 市场有没有准备好接住这个模式？ | [📄](./roles/horizontal-experts/market-feasibility.md) |
+| **交付可行性专家** | 成本结构 | 钱烧得值不值？飞轮转不转得起来？ | [📄](./roles/horizontal-experts/delivery-feasibility.md) |
+| **客户需求分析专家** | 客户细分 | 客户真想买吗？他雇产品完成哪个 Job？ | [📄](./roles/horizontal-experts/customer-needs.md) |
+
+### 🧩 垂直深挖 · 9 模块专家
+
+> 每个模块独立深挖，输出标准化分析卡片。
+
+| # | 角色 | 模块 | 核心追问 | 工作准则 |
+|---|------|------|---------|---------|
+| 1 | **CS** | 客户细分 | 我们到底在为谁服务？ | [📄](./roles/vertical-experts/customer-segments.md) |
+| 2 | **VP** | 价值主张 | 客户凭什么选你不选别人？ | [📄](./roles/vertical-experts/value-propositions.md) |
+| 3 | **CH** | 渠道通路 | 客户怎么知道我们？怎么买到？ | [📄](./roles/vertical-experts/channels.md) |
+| 4 | **CR** | 客户关系 | 买完后如何留存、复购、推荐？ | [📄](./roles/vertical-experts/customer-relationships.md) |
+| 5 | **RS** | 收入来源 | 钱从哪里来？用什么姿势收？ | [📄](./roles/vertical-experts/revenue-streams.md) |
+| 6 | **KR** | 关键资源 | 这个模式跑起来，必须拥有什么？ | [📄](./roles/vertical-experts/key-resources.md) |
+| 7 | **KA** | 关键活动 | 必须做对哪些事？ | [📄](./roles/vertical-experts/key-activities.md) |
+| 8 | **KP** | 重要合作 | 谁必须站我们这边？ | [📄](./roles/vertical-experts/key-partnerships.md) |
+| 9 | **CST** | 成本结构 | 钱烧在哪？哪里能优化？ | [📄](./roles/vertical-experts/cost-structure.md) |
+
+### 🎨 视觉翻译（1 角色）
+
+| 角色 | 职责 | 工作准则 |
+|------|------|---------|
+| **画布专家** | 用 mermaid 把诊断结果可视化 | [📄](./roles/visual-expert/canvas-artist.md) |
 
 ---
 
-## 📚 文档导航
+## 🎨 核心画布预览
 
-- [完整工作流](./workflows/full-diagnosis-workflow.md)
-- [触发命令手册](./docs/commands.md) ⭐
-- [任务卡模板](./templates/task-card.md)
-- [输出模板库](./templates/output-templates.md)
-- [示例：AI 简历优化订阅服务](./examples/ai-resume-service.md)
-- [方法论：可行性三角](./docs/feasibility-triangle.md)
-- [方法论：JTBD 客户需求分析](./docs/jtbd-methodology.md)
+画布专家产出的 5 种核心图：
+
+### BMC 9 宫格
+
+```mermaid
+flowchart TB
+    subgraph 需求侧
+        direction LR
+        CS[客户细分] ~~~ CH[渠道通路] ~~~ CR[客户关系]
+    end
+    VP[价值主张]
+    subgraph 供给侧
+        direction LR
+        KR[关键资源] ~~~ KA[关键活动] ~~~ KP[重要合作]
+    end
+    subgraph 财务层
+        direction LR
+        RS[收入来源] ~~~ CST[成本结构]
+    end
+    CS --> VP
+    CH --> VP
+    KR --> VP
+    KA --> VP
+    VP --> CR
+    VP --> RS
+    KP --> KA
+    KA --> CST
+```
+
+### 增长飞轮
+
+```mermaid
+flowchart LR
+    A[更多用户] -->|"产生"| B[更多数据]
+    B -->|"优化"| C[更好体验]
+    C -->|"驱动"| D[更高复购]
+    D -->|"带来"| A
+    style A fill:#fef3c7
+    style C fill:#dcfce7
+```
+
+更多画布模板见 [画布专家手册](./roles/visual-expert/canvas-artist.md)。
+
+---
+
+## 📚 完整文档
+
+### 🎯 入门
+- 📋 [触发命令手册](./docs/commands.md) — 7 核心 + 10 快捷 + 3 上下文命令
+- 📋 [任务卡模板](./templates/task-card.md) — 提交诊断时填写
+- 📋 [输出模板库](./templates/output-templates.md) — 标准化输出格式
+
+### 🛠️ 工作流
+- 🔄 [完整诊断工作流](./workflows/full-diagnosis-workflow.md) — 6 阶段 SOP
+
+### 📖 方法论
+- 🌍 [可行性三角](./docs/feasibility-triangle.md) — 三维穿透评估
+- 🎯 [JTBD 客户需求分析](./docs/jtbd-methodology.md) — Jobs-to-be-Done 方法
+
+### 💡 示例
+- 🚀 [AI 简历优化订阅服务诊断案例](./examples/ai-resume-service.md) — 完整诊断示例
+
+### 📦 其他
+- 📝 [更新日志](./CHANGELOG.md)
+- ⚖️ [MIT 许可证](./LICENSE)
+
+---
+
+## 🎯 三种使用方式
+
+| 方式 | 命令 | 适用场景 | 耗时 |
+|------|------|---------|------|
+| **🎯 完整诊断** | `/bmc 完整诊断` | 新业务上线前、季度复盘、融资前自检 | 1-2 小时 |
+| **🔍 专项诊断** | `/bmc 专项诊断 [模块]` | 具体问题快速突破 | 20-30 分钟 |
+| **🚀 灵感触发** | `/bmc 拍砖` | 还在探索方向，没有定下来 | 10-15 分钟 |
+
+详细使用指南见 [docs/commands.md](./docs/commands.md)。
+
+---
+
+## 💡 设计哲学
+
+1. **垂直 + 横向双视角** —— 每个模块既被垂直深挖，又被横向穿透
+2. **可行性三角** —— 客户需求 × 市场可行性 × 交付可行性 = 真伪判断
+3. **视觉优先** —— 复杂结论必须可视觉化，画布专家只翻译不创造
+4. **纪律明确** —— 每个角色有清晰的「输入/输出/陷阱」，避免角色越界
+5. **咬合度检查** —— 逻辑审查官作为独立裁判，保证整体逻辑一致
+
+> **90% 的商业模式失败，不是因为单个模块差，而是模块之间不咬合。**
 
 ---
 
 ## 🤝 贡献
 
 欢迎贡献：
-- 新增行业场景的诊断示例
-- 优化角色工作准则
-- 增加更多 mermaid 模板
-- 完善输出模板库
+
+- 🆕 **新增行业场景的诊断示例**（[examples/](./examples/)）
+- ✏️ **优化角色工作准则**（[roles/](./roles/)）
+- 🎨 **增加更多 mermaid 模板**（[roles/visual-expert/](./roles/visual-expert/)）
+- 📋 **完善输出模板库**（[templates/](./templates/)）
+
+提交方式：PR 或 Issue。
 
 ---
 
 ## 📄 许可证
 
-MIT License — 自由使用、修改、分享。
+[MIT License](./LICENSE) — 自由使用、修改、分享。
 
 ---
 
-**"天道推演不是预言，而是通过穷尽可能的未来，来选择最好的现在。"**
+## 🌟 Star History
 
-本天团的设计灵感来自商业推演方法论：把复杂的商业决策拆解为可分析、可推演、可视觉化的结构。
+如果这个项目对你有帮助，欢迎点 Star 支持一下 ⭐
+
+---
+
+<div align="center">
+
+**🎯 14 角色天团 · 把商业决策从「拍脑袋」变成「可推演」**
+
+[📖 命令手册](./docs/commands.md) · [📋 任务卡](./templates/task-card.md) · [💡 案例](./examples/ai-resume-service.md)
+
+</div>
