@@ -121,19 +121,16 @@
 ### BMC 9 宫格
 
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph 需求侧
-        direction LR
-        CS[客户细分] ~~~ CH[渠道通路] ~~~ CR[客户关系]
+        CS[客户细分] --> CH[渠道通路] --> CR[客户关系]
     end
     VP[价值主张]
     subgraph 供给侧
-        direction LR
-        KR[关键资源] ~~~ KA[关键活动] ~~~ KP[重要合作]
+        KR[关键资源] --> KA[关键活动] --> KP[重要合作]
     end
     subgraph 财务层
-        direction LR
-        RS[收入来源] ~~~ CST[成本结构]
+        RS[收入来源] --> CST[成本结构]
     end
     CS --> VP
     CH --> VP
