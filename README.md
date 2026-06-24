@@ -1,232 +1,236 @@
 # 🎯 Business Model Canvas Agents
 
-> **一个由 14 个虚拟专家组成的虚拟团队，专门做商业模式画布（Business Model Canvas）的深度诊断。**
+> **A 14-role virtual expert team for deep Business Model Canvas (BMC) analysis — vertical deep-dives, horizontal penetration, and visual translation in one cohesive system.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.2.3-blue.svg)](./CHANGELOG.md)
-[![Roles](https://img.shields.io/badge/Experts-14_角色-green.svg)](#-14-角色天团)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](#-贡献)
+[![Version](https://img.shields.io/badge/Version-1.3.0-blue.svg)](./CHANGELOG.md)
+[![Roles](https://img.shields.io/badge/Experts-14_Roles-green.svg)](#-the-14-role-team)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](#-contributing)
+[![zh-CN](https://img.shields.io/badge/lang-中文-red.svg)](./README.zh-CN.md)
+
+> 📖 **Read in other languages**: [中文 (zh-CN)](./README.zh-CN.md)
 
 ---
 
-## 🧠 一句话定义
+## 🧠 In One Sentence
 
-**BMC 不只是 9 个格子，而是一张咬合的齿轮图。**
+**A Business Model Canvas isn't 9 isolated cells — it's a set of interlocking gears.**
 
-本天团 = 9 个模块专家 + 3 个可行性穿透 + 1 个咬合度审查 + 1 个视觉翻译 = **立体的商业诊断体系**。
+This team combines 9 module specialists + 3 feasibility penetrators + 1 coherence auditor + 1 visual translator = **a three-dimensional business diagnosis system**.
 
 ---
 
-## 🏗️ 架构全景
+## 🏗️ Architecture
 
 ```
-          客户需求（想不想买？）
-                  ↑
-                  │
-   市场可行性 ──→ 商业模式 ←── 交付可行性
-   （能不能搭？）    │       （能不能跑？）
-                  │
-                  ↓
-            9 模块基础分析（是什么？）
-                  │
-                  ↓
-            🔬 咬合度检查
-                  │
-                  ↓
-            🎨 视觉翻译
-                  │
-                  ↓
-              📋 诊断书
+          Customer Needs (will they buy?)
+                    ↑
+                    │
+   Market Feasibility ──→ Business Model ←── Delivery Feasibility
+   (can we build it?)      │           (can we run it?)
+                           │
+                           ↓
+                9-Module Deep Analysis (what is it?)
+                           │
+                           ↓
+                🔬 Coherence Audit
+                           │
+                           ↓
+                🎨 Visual Translation
+                           │
+                           ↓
+                    📋 Diagnostic Report
 ```
 
 ---
 
-## 🚀 快速开始（30 秒上手）
+## 🚀 Quick Start (30 seconds)
 
-**3 个最常用命令**：
+**3 most-used commands**:
 
 ```bash
-/bmc 完整诊断    # 全面体检（1-2 小时）→ 7 件套诊断书
-/bmc 拍砖        # 新想法快速验证（10-15 分钟）→ 可行性三角评分
-/bmc 客户需求    # 客户洞察 + JTBD（20-30 分钟）→ 客户旅程地图
+/bmc full-diagnosis    # Complete health check (1-2h) → 7-piece diagnostic report
+/bmc stress-test       # Quick validation of a new idea (10-15min) → feasibility triangle
+/bmc customer-needs    # Customer insight + JTBD (20-30min) → customer journey map
 ```
 
-**完整命令手册**：👉 [docs/commands.md](./docs/commands.md)（7 核心 + 10 快捷 + 3 上下文）
+**Full command manual**: 👉 [docs/commands.md](./docs/commands.md) (7 core + 10 shortcut + 3 contextual)
 
 ---
 
-## 📦 7 件套交付物
+## 📦 The 7-Piece Deliverable
 
-每次完整诊断，老板会拿到：
+Each complete diagnosis produces:
 
-| # | 交付物 | 内容 | 一句话用途 |
-|---|--------|------|----------|
-| 1 | 📊 **BMC 画布** | 9 宫格可视化 | 一页纸讲清商业模式 |
-| 2 | 🧩 **9 模块分析卡** | 每模块深度解读 | 单点细节追问 |
-| 3 | 🌍 **市场可行性报告** | 合作切入的市场评估 | 判断「能不能搭」 |
-| 4 | ⚙️ **交付可行性报告** | 成本切入的飞轮分析 | 判断「能不能跑」 |
-| 5 | 🎯 **客户需求洞察报告** | 客户切入的 JTBD 分析 | 判断「想不想买」 |
-| 6 | 🔬 **健康度报告** | 模块咬合度 + 风险清单 | 判断「哪里有坑」 |
-| 7 | 📋 **总指挥诊断书** | 优化建议 + 优先级路径 | 行动指南 |
-
----
-
-## 👥 14 角色天团
-
-### 🎖️ 顶层协调（2 角色）
-
-| 角色 | 职责 | 工作准则 |
-|------|------|---------|
-| **总指挥 PMO** | 任务拆解 · 冲突裁决 · 最终整合 | [📄](./roles/orchestrator/PMO.md) |
-| **逻辑审查官** | 模块咬合度检查 · 风险预警 | [📄](./roles/orchestrator/coherence-auditor.md) |
-
-### 🌍 横向穿透 · 可行性三角（3 角色）
-
-> 从特定模块切入，**透视整个商业模式**的可行性。
-
-| 角色 | 切入口 | 核心追问 | 工作准则 |
-|------|--------|---------|---------|
-| **市场可行性专家** | 重要合作 | 市场有没有准备好接住这个模式？ | [📄](./roles/horizontal-experts/market-feasibility.md) |
-| **交付可行性专家** | 成本结构 | 钱烧得值不值？飞轮转不转得起来？ | [📄](./roles/horizontal-experts/delivery-feasibility.md) |
-| **客户需求分析专家** | 客户细分 | 客户真想买吗？他雇产品完成哪个 Job？ | [📄](./roles/horizontal-experts/customer-needs.md) |
-
-### 🧩 垂直深挖 · 9 模块专家
-
-> 每个模块独立深挖，输出标准化分析卡片。
-
-| # | 角色 | 模块 | 核心追问 | 工作准则 |
-|---|------|------|---------|---------|
-| 1 | **CS** | 客户细分 | 我们到底在为谁服务？ | [📄](./roles/vertical-experts/customer-segments.md) |
-| 2 | **VP** | 价值主张 | 客户凭什么选你不选别人？ | [📄](./roles/vertical-experts/value-propositions.md) |
-| 3 | **CH** | 渠道通路 | 客户怎么知道我们？怎么买到？ | [📄](./roles/vertical-experts/channels.md) |
-| 4 | **CR** | 客户关系 | 买完后如何留存、复购、推荐？ | [📄](./roles/vertical-experts/customer-relationships.md) |
-| 5 | **RS** | 收入来源 | 钱从哪里来？用什么姿势收？ | [📄](./roles/vertical-experts/revenue-streams.md) |
-| 6 | **KR** | 关键资源 | 这个模式跑起来，必须拥有什么？ | [📄](./roles/vertical-experts/key-resources.md) |
-| 7 | **KA** | 关键活动 | 必须做对哪些事？ | [📄](./roles/vertical-experts/key-activities.md) |
-| 8 | **KP** | 重要合作 | 谁必须站我们这边？ | [📄](./roles/vertical-experts/key-partnerships.md) |
-| 9 | **CST** | 成本结构 | 钱烧在哪？哪里能优化？ | [📄](./roles/vertical-experts/cost-structure.md) |
-
-### 🎨 视觉翻译（1 角色）
-
-| 角色 | 职责 | 工作准则 |
-|------|------|---------|
-| **画布专家** | 用 mermaid 把诊断结果可视化 | [📄](./roles/visual-expert/canvas-artist.md) |
+| # | Deliverable | Content | One-line Use |
+|---|-------------|---------|--------------|
+| 1 | 📊 **BMC Canvas** | 9-cell visualization | Explain the business model on one page |
+| 2 | 🧩 **9 Module Cards** | Deep dive on each module | Single-point deep questions |
+| 3 | 🌍 **Market Feasibility Report** | Market assessment via partnerships | "Can we build it?" |
+| 4 | ⚙️ **Delivery Feasibility Report** | Flywheel analysis via cost structure | "Can we run it?" |
+| 5 | 🎯 **Customer Needs Report** | JTBD analysis via customer segments | "Do they want it?" |
+| 6 | 🔬 **Health Report** | Module coherence + risk list | "Where are the gaps?" |
+| 7 | 📋 **Orchestrator Report** | Optimization advice + priority path | Action guide |
 
 ---
 
-## 🎨 核心画布预览
+## 👥 The 14-Role Team
 
-画布专家产出的 5 种核心图（详见 [画布专家手册](./roles/visual-expert/canvas-artist.md)）：
+### 🎖️ Top-Level Coordination (2 roles)
 
-### BMC 9 宫格
+| Role | Responsibility | Charter |
+|------|---------------|---------|
+| **PMO Orchestrator** | Task decomposition · Conflict resolution · Final integration | [📄](./roles/orchestrator/PMO.md) |
+| **Coherence Auditor** | Module coherence check · Risk warning | [📄](./roles/orchestrator/coherence-auditor.md) |
+
+### 🌍 Horizontal Penetration · Feasibility Triangle (3 roles)
+
+> Cut through the whole business model from a specific module entry point.
+
+| Role | Entry Module | Core Question | Charter |
+|------|--------------|---------------|---------|
+| **Market Feasibility Expert** | Key Partnerships | Is the market ready to receive this model? | [📄](./roles/horizontal-experts/market-feasibility.md) |
+| **Delivery Feasibility Expert** | Cost Structure | Is the money well spent? Does the flywheel spin? | [📄](./roles/horizontal-experts/delivery-feasibility.md) |
+| **Customer Needs Expert** | Customer Segments | Do they really want it? What Job are they hiring it for? | [📄](./roles/horizontal-experts/customer-needs.md) |
+
+### 🧩 Vertical Deep-Dive · 9 Module Specialists
+
+> Each module analyzed independently with standardized output cards.
+
+| # | Role | Module | Core Question | Charter |
+|---|------|--------|---------------|---------|
+| 1 | **CS** | Customer Segments | Who exactly are we serving? | [📄](./roles/vertical-experts/customer-segments.md) |
+| 2 | **VP** | Value Propositions | Why do they pick us over alternatives? | [📄](./roles/vertical-experts/value-propositions.md) |
+| 3 | **CH** | Channels | How do customers find us? How do they buy? | [📄](./roles/vertical-experts/channels.md) |
+| 4 | **CR** | Customer Relationships | How do we retain, repurchase, and get referrals? | [📄](./roles/vertical-experts/customer-relationships.md) |
+| 5 | **RS** | Revenue Streams | Where does the money come from? How is it collected? | [📄](./roles/vertical-experts/revenue-streams.md) |
+| 6 | **KR** | Key Resources | What must we own to run this? | [📄](./roles/vertical-experts/key-resources.md) |
+| 7 | **KA** | Key Activities | What must we do right? | [📄](./roles/vertical-experts/key-activities.md) |
+| 8 | **KP** | Key Partnerships | Who must be on our side? | [📄](./roles/vertical-experts/key-partnerships.md) |
+| 9 | **CST** | Cost Structure | Where does the money burn? Where to optimize? | [📄](./roles/vertical-experts/cost-structure.md) |
+
+### 🎨 Visual Translation (1 role)
+
+| Role | Responsibility | Charter |
+|------|---------------|---------|
+| **Canvas Artist** | Visualize diagnostic results with mermaid | [📄](./roles/visual-expert/canvas-artist.md) |
+
+---
+
+## 🎨 Canvas Preview
+
+The Canvas Artist produces 5 core diagram types (see [Canvas Artist Charter](./roles/visual-expert/canvas-artist.md)):
+
+### BMC 9-Cell
 
 ```mermaid
 flowchart LR
-    CS[客户细分] --> VP[价值主张]
-    CH[渠道通路] --> VP
-    KR[关键资源] --> VP
-    KA[关键活动] --> VP
-    VP --> CR[客户关系]
-    VP --> RS[收入来源]
-    KP[重要合作] --> KA
-    KA --> CST[成本结构]
+    CS[Customer Segments] --> VP[Value Propositions]
+    CH[Channels] --> VP
+    KR[Key Resources] --> VP
+    KA[Key Activities] --> VP
+    VP --> CR[Customer Relationships]
+    VP --> RS[Revenue Streams]
+    KP[Key Partnerships] --> KA
+    KA --> CST[Cost Structure]
     style VP fill:#fef3c7,stroke:#f59e0b,stroke-width:3px
     style RS fill:#dcfce7
     style CST fill:#fee2e2
 ```
 
-### 增长飞轮
+### Growth Flywheel
 
 ```mermaid
 flowchart LR
-    A[更多用户] --> B[更多数据]
-    B --> C[更好体验]
-    C --> D[更高复购]
+    A[More Users] --> B[More Data]
+    B --> C[Better Experience]
+    C --> D[Higher Retention]
     D --> A
     style A fill:#fef3c7
     style C fill:#dcfce7
 ```
 
-> 💡 **小贴士**：如果 GitHub 上 mermaid 图未自动渲染，请刷新页面（GitHub 渲染有缓存）。所有图均经过 GitHub 官方 mermaid 引擎测试，语法兼容性 100%。
+> 💡 **Tip**: If mermaid diagrams don't auto-render on GitHub, refresh the page (GitHub has render cache). All diagrams are tested with GitHub's official mermaid engine.
 
 ---
 
-## 📚 完整文档
+## 📚 Full Documentation
 
-### 🎯 入门
-- 📋 [触发命令手册](./docs/commands.md) — 7 核心 + 10 快捷 + 3 上下文命令
-- 📋 [任务卡模板](./templates/task-card.md) — 提交诊断时填写
-- 📋 [输出模板库](./templates/output-templates.md) — 标准化输出格式
+### 🎯 Getting Started
+- 📋 [Command Manual](./docs/commands.md) — 7 core + 10 shortcut + 3 contextual commands
+- 📋 [Task Card Template](./templates/task-card.md) — Fill this in to submit a diagnosis
+- 📋 [Output Template Library](./templates/output-templates.md) — Standardized output formats
 
-### 🛠️ 工作流
-- 🔄 [完整诊断工作流](./workflows/full-diagnosis-workflow.md) — 6 阶段 SOP
+### 🛠️ Workflow
+- 🔄 [Full Diagnosis Workflow](./workflows/full-diagnosis-workflow.md) — 6-phase SOP
 
-### 📖 方法论
-- 🌍 [可行性三角](./docs/feasibility-triangle.md) — 三维穿透评估
-- 🎯 [JTBD 客户需求分析](./docs/jtbd-methodology.md) — Jobs-to-be-Done 方法
+### 📖 Methodology
+- 🌍 [Feasibility Triangle](./docs/feasibility-triangle.md) — Three-dimensional penetration
+- 🎯 [JTBD Customer Needs Analysis](./docs/jtbd-methodology.md) — Jobs-to-be-Done method
 
-### 💡 示例
-- 🚀 [AI 简历优化订阅服务诊断案例](./examples/ai-resume-service.md) — 完整诊断示例
+### 💡 Example
+- 🚀 [AI Resume Optimization Service Case Study](./examples/ai-resume-service.md) — Complete diagnosis example
 
-### 📦 其他
-- 📝 [更新日志](./CHANGELOG.md)
-- ⚖️ [MIT 许可证](./LICENSE)
-
----
-
-## 🎯 三种使用方式
-
-| 方式 | 命令 | 适用场景 | 耗时 |
-|------|------|---------|------|
-| **🎯 完整诊断** | `/bmc 完整诊断` | 新业务上线前、季度复盘、融资前自检 | 1-2 小时 |
-| **🔍 专项诊断** | `/bmc 专项诊断 [模块]` | 具体问题快速突破 | 20-30 分钟 |
-| **🚀 灵感触发** | `/bmc 拍砖` | 还在探索方向，没有定下来 | 10-15 分钟 |
-
-详细使用指南见 [docs/commands.md](./docs/commands.md)。
+### 📦 Other
+- 📝 [Changelog](./CHANGELOG.md)
+- ⚖️ [MIT License](./LICENSE)
+- 🌐 [中文文档](./README.zh-CN.md)
 
 ---
 
-## 💡 设计哲学
+## 🎯 Three Usage Modes
 
-1. **垂直 + 横向双视角** —— 每个模块既被垂直深挖，又被横向穿透
-2. **可行性三角** —— 客户需求 × 市场可行性 × 交付可行性 = 真伪判断
-3. **视觉优先** —— 复杂结论必须可视觉化，画布专家只翻译不创造
-4. **纪律明确** —— 每个角色有清晰的「输入/输出/陷阱」，避免角色越界
-5. **咬合度检查** —— 逻辑审查官作为独立裁判，保证整体逻辑一致
+| Mode | Command | Use Case | Duration |
+|------|---------|----------|----------|
+| **🎯 Full Diagnosis** | `/bmc full-diagnosis` | Pre-launch check, quarterly review, pre-funding self-audit | 1-2 hours |
+| **🔍 Focused Diagnosis** | `/bmc focused-diagnosis [module]` | Quick breakthrough on a specific issue | 20-30 minutes |
+| **🚀 Idea Validation** | `/bmc stress-test` | Early exploration, direction not yet decided | 10-15 minutes |
 
-> **90% 的商业模式失败，不是因为单个模块差，而是模块之间不咬合。**
-
----
-
-## 🤝 贡献
-
-欢迎贡献：
-
-- 🆕 **新增行业场景的诊断示例**（[examples/](./examples/)）
-- ✏️ **优化角色工作准则**（[roles/](./roles/)）
-- 🎨 **增加更多 mermaid 模板**（[roles/visual-expert/](./roles/visual-expert/)）
-- 📋 **完善输出模板库**（[templates/](./templates/)）
-
-提交方式：PR 或 Issue。
+See [docs/commands.md](./docs/commands.md) for the complete guide.
 
 ---
 
-## 📄 许可证
+## 💡 Design Philosophy
 
-[MIT License](./LICENSE) — 自由使用、修改、分享。
+1. **Vertical + Horizontal Dual View** — Each module is both deep-dived vertically and penetrated horizontally
+2. **Feasibility Triangle** — Customer Needs × Market Feasibility × Delivery Feasibility = truth check
+3. **Visual First** — Complex conclusions must be visualizable; the Canvas Artist only translates, never invents
+4. **Clear Discipline** — Each role has clear inputs/outputs/pitfalls to prevent role overlap
+5. **Coherence Audit** — Independent auditor ensures overall logical consistency
+
+> **90% of business model failures aren't because of a single weak module — they're because the modules don't interlock.**
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome:
+
+- 🆕 **New industry case studies** ([examples/](./examples/))
+- ✏️ **Improve role charters** ([roles/](./roles/))
+- 🎨 **Add more mermaid templates** ([roles/visual-expert/](./roles/visual-expert/))
+- 📋 **Expand output template library** ([templates/](./templates/))
+
+Submit via PR or Issue.
+
+---
+
+## 📄 License
+
+[MIT License](./LICENSE) — Free to use, modify, and share.
 
 ---
 
 ## 🌟 Star History
 
-如果这个项目对你有帮助，欢迎点 Star 支持一下 ⭐
+If this project helps you, a ⭐ would be appreciated!
 
 ---
 
 <div align="center">
 
-**🎯 14 角色天团 · 把商业决策从「拍脑袋」变成「可推演」**
+**🎯 The 14-Role Team · Turning "gut feel" business decisions into "simulatable" ones**
 
-[📖 命令手册](./docs/commands.md) · [📋 任务卡](./templates/task-card.md) · [💡 案例](./examples/ai-resume-service.md)
+[📖 Command Manual](./docs/commands.md) · [📋 Task Card](./templates/task-card.md) · [💡 Example](./examples/ai-resume-service.md) · [中文文档](./README.zh-CN.md)
 
 </div>

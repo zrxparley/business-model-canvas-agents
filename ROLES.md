@@ -1,40 +1,46 @@
-# 商业画布专家天团 · 14 角色
+# Business Model Canvas Agents · 14-Role Team
 
-> 一个由 14 个虚拟专家组成的虚拟团队，专门做商业模式画布（Business Model Canvas）的深度诊断。
+> A 14-role virtual expert team for deep Business Model Canvas (BMC) analysis.
+>
+> 📖 **其他语言版本**: [中文版 (zh-CN)](./ROLES.zh-CN.md)
 
-## 角色速览
+---
 
-### 🎖️ 顶层
-- **总指挥 PMO** — 任务拆解、冲突裁决、最终输出
-- **逻辑审查官** — 模块咬合度检查
+## Team Quick View
 
-### 🌍 横向穿透（可行性三角）
-- **市场可行性专家** — 从合作看市场
-- **交付可行性专家** — 从成本看交付
-- **客户需求分析专家** — 从客户看需求
+### 🎖️ Top-Level
+- **PMO Orchestrator** — Task decomposition, conflict resolution, final integration
+- **Coherence Auditor** — Module coherence check
 
-### 🧩 垂直深挖（9 模块）
-- **CS** 客户细分
-- **VP** 价值主张
-- **CH** 渠道通路
-- **CR** 客户关系
-- **RS** 收入来源
-- **KR** 关键资源
-- **KA** 关键活动
-- **KP** 重要合作
-- **CST** 成本结构
+### 🌍 Horizontal Penetration · Feasibility Triangle
+- **Market Feasibility Expert** — View the market through partnerships
+- **Delivery Feasibility Expert** — View delivery through cost structure
+- **Customer Needs Expert** — View needs through customer segments
 
-### 🎨 视觉翻译
-- **画布专家** — 用 mermaid 把诊断结果可视化
+### 🧩 Vertical Deep-Dive · 9 Modules
+- **CS** Customer Segments
+- **VP** Value Propositions
+- **CH** Channels
+- **CR** Customer Relationships
+- **RS** Revenue Streams
+- **KR** Key Resources
+- **KA** Key Activities
+- **KP** Key Partnerships
+- **CST** Cost Structure
 
-## 文档结构
+### 🎨 Visual Translation
+- **Canvas Artist** — Visualize diagnostic results with mermaid
 
-- [`roles/`](./roles/) — 14 角色详细工作准则
-- [`workflows/`](./workflows/) — 完整诊断工作流
-- [`templates/`](./templates/) — 任务卡 + 输出模板
-- [`examples/`](./examples/) — 真实业务诊断示例
-- [`docs/`](./docs/) — 方法论文档
+---
 
-## 完整 README
+## Document Structure
 
-见 [README.md](./README.md)
+- [`roles/`](./roles/) — 14 role detailed charters
+- [`workflows/`](./workflows/) — Full diagnosis workflow
+- [`templates/`](./templates/) — Task card + output templates
+- [`examples/`](./examples/) — Real business diagnosis examples
+- [`docs/`](./docs/) — Methodology documents
+
+## Full README
+
+See [README.md](./README.md)

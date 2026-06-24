@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.0] - 2026-06-22
+
+### Added
+- 🌍 i18n 多语言支持
+  - 新增英文 `README.md` 作为默认 README（GitHub 优先显示）
+  - 原中文 README 迁移到 `README.zh-CN.md`
+  - 新增英文 `ROLES.md`（原 `ROLES.md` 迁移到 `ROLES.zh-CN.md`）
+  - 新增英文 `docs/commands.md`（原 `docs/commands.md` 迁移到 `docs/commands.zh-CN.md`）
+  - 中英文档相互添加语言切换徽章 + 链接
+
 ## [1.2.4] - 2026-06-22
 
 ### Fixed

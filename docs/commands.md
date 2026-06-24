@@ -1,349 +1,356 @@
-# 触发关键词命令手册
+# Command Manual
 
-> **老板只记一个总入口 `/bmc`，用关键词组合精准召唤。**
-
----
-
-## 设计原则
-
-```
-[动作] + [对象] + [业务]
-```
-
-例如：`/bmc 完整诊断 AI 简历优化`
+> **One unified entry `/bmc`, with keyword combinations for precise team activation.**
 
 ---
 
-## 一、统一入口
+## Design Principle
+
+```
+[Action] + [Target] + [Business]
+```
+
+Example: `/bmc full-diagnosis AI resume optimization`
+
+---
+
+## 1. Unified Entry
 
 ### `/bmc`
-所有 BMC 天团相关调用都用这个前缀。
+All BMC team invocations use this prefix.
 
 ---
 
-## 二、核心命令（7 个）
+## 2. Core Commands (7)
 
-### 1️⃣ `/bmc 完整诊断`
+### 1️⃣ `/bmc full-diagnosis`
 
-**触发场景**：新业务上线前、季度复盘、融资前自检
+**Trigger scenario**: Pre-launch check, quarterly review, pre-funding self-audit
 
-**模板**：
+**Template**:
 ```
-/bmc 完整诊断
-业务：[名称]
-客户：[谁]
-价值主张：[一句话]
-阶段：[想法/MVP/增长/转型]
-困惑：[Top 1-3 困惑]
-背景：[团队、营收、关键合作]
-输出：[完整 7 件套 / 关键模块 / 重点优化]
+/bmc full-diagnosis
+Business: [name]
+Customer: [who]
+Value proposition: [one sentence]
+Stage: [idea/MVP/growth/transformation]
+Confusion: [Top 1-3 concerns]
+Background: [team, revenue, key partnerships]
+Output: [full 7-piece / key modules / priority optimization]
 ```
 
-**默认召唤**：14 角色全员
+**Default team**: All 14 roles
 
-**预计时间**：1-2 小时
+**Expected time**: 1-2 hours
 
-**输出**：7 件套诊断书
+**Output**: 7-piece diagnostic report
 
 ---
 
-### 2️⃣ `/bmc 专项诊断`
+### 2️⃣ `/bmc focused-diagnosis`
 
-**触发场景**：具体问题快速突破
+**Trigger scenario**: Quick breakthrough on a specific issue
 
-**模板**：
+**Template**:
 ```
-/bmc 专项诊断 [模块名]
-业务：[名称]
-问题：[具体问题]
-```
-
-**示例**：
-```
-/bmc 专项诊断 CH
-业务：AI 简历优化
-问题：CAC 涨到 200 元，知乎渠道是不是该换？
+/bmc focused-diagnosis [module-name]
+Business: [name]
+Problem: [specific issue]
 ```
 
-**默认召唤**：目标模块专家 + 上下游 2-3 个相关专家
+**Example**:
+```
+/bmc focused-diagnosis CH
+Business: AI resume optimization
+Problem: CAC rose to 200, should we switch from Zhihu channel?
+```
 
-**预计时间**：20-30 分钟
+**Default team**: Target module expert + 2-3 upstream/downstream experts
+
+**Expected time**: 20-30 minutes
 
 ---
 
-### 3️⃣ `/bmc 拍砖`
+### 3️⃣ `/bmc stress-test`
 
-**触发场景**：新想法快速验证
+**Trigger scenario**: Quick validation of a new idea
 
-**模板**：
+**Template**:
 ```
-/bmc 拍砖
-想法：[描述]
-目标客户：[谁]
-市场：[哪里]
+/bmc stress-test
+Idea: [description]
+Target customer: [who]
+Market: [where]
 ```
 
-**默认召唤**：3 个可行性专家（不召唤 9 模块专家）
+**Default team**: 3 feasibility experts only (no 9 module experts)
 
-**预计时间**：10-15 分钟
+**Expected time**: 10-15 minutes
 
-**输出**：可行性三角评分 + 一句话拍砖结论
+**Output**: Feasibility triangle score + one-line stress-test verdict
 
 ---
 
-### 4️⃣ `/bmc 客户需求`
+### 4️⃣ `/bmc customer-needs`
 
-**触发场景**：想搞清楚"客户到底为什么要买"
+**Trigger scenario**: Want to understand "why customers really buy"
 
-**模板**：
+**Template**:
 ```
-/bmc 客户需求
-业务：[名称]
-当前 VP：[现有价值主张]
+/bmc customer-needs
+Business: [name]
+Current VP: [current value proposition]
 ```
 
-**默认召唤**：客户需求分析专家 + CS + VP
+**Default team**: Customer Needs Expert + CS + VP
 
-**输出**：JTBD 任务清单 + 客户旅程地图 + VP 匹配度评分
+**Output**: JTBD task list + customer journey map + VP match score
 
 ---
 
-### 5️⃣ `/bmc 财务体检`
+### 5️⃣ `/bmc financial-checkup`
 
-**触发场景**：现金流、单位经济、增长飞轮相关问题
+**Trigger scenario**: Cash flow, unit economics, growth flywheel issues
 
-**模板**：
+**Template**:
 ```
-/bmc 财务体检
-业务：[名称]
-当前 LTV：[数字 / 不知道]
-当前 CAC：[数字 / 不知道]
-当前复购率：[数字 / 不知道]
+/bmc financial-checkup
+Business: [name]
+Current LTV: [number / don't know]
+Current CAC: [number / don't know]
+Current repurchase rate: [number / don't know]
 ```
 
-**默认召唤**：交付可行性专家 + RS + CST + KA
+**Default team**: Delivery Feasibility Expert + RS + CST + KA
 
-**输出**：单位经济模型 + 现金流健康度评级 + 飞轮图
+**Output**: Unit economics model + cash flow health grade + flywheel diagram
 
 ---
 
-### 6️⃣ `/bmc 市场体检`
+### 6️⃣ `/bmc market-checkup`
 
-**触发场景**：进入新市场、选择合作伙伴、评估竞争
+**Trigger scenario**: Entering new market, choosing partners, evaluating competition
 
-**模板**：
+**Template**:
 ```
-/bmc 市场体检
-业务：[名称]
-目标市场：[地域/人群]
-合作方：[候选合作方 / 不知道找谁]
+/bmc market-checkup
+Business: [name]
+Target market: [region / customer segment]
+Partners: [candidate partners / don't know who]
 ```
 
-**默认召唤**：市场可行性专家 + KP + CH
+**Default team**: Market Feasibility Expert + KP + CH
 
-**输出**：四维雷达图 + 关键依赖清单 + 实现路径建议
+**Output**: Four-dimension radar + key dependency list + implementation path
 
 ---
 
-### 7️⃣ `/bmc 画布`
+### 7️⃣ `/bmc canvas`
 
-**触发场景**：已经有结论，要可视化输出
+**Trigger scenario**: Have conclusions, need visualization output
 
-**模板**：
+**Template**:
 ```
-/bmc 画布 [类型]
-内容：[结论描述]
-```
-
-**类型选项**：
-- `bmc` — 9 宫格画布
-- `flywheel` — 增长飞轮图
-- `journey` — 客户旅程图
-- `coherence` — 模块咬合关系图
-- `timeline` — 优化路径时间线
-
-**示例**：
-```
-/bmc 画布 bmc
-内容：AI 简历优化订阅，CS=30 岁互联网求职者，
-VP=30 秒改简历，CH=知乎+猎聘，RS=包月订阅，CST=AI算力
+/bmc canvas [type]
+Content: [conclusion description]
 ```
 
----
+**Type options**:
+- `bmc` — 9-cell BMC canvas
+- `flywheel` — Growth flywheel diagram
+- `journey` — Customer journey diagram
+- `coherence` — Module coherence diagram
+- `timeline` — Optimization path timeline
 
-## 三、快捷命令（10 个高频问题）
-
-| 快捷命令 | 召唤角色 | 解决问题 |
-|---------|---------|---------|
-| `/bmc 能赚钱吗` | 交付可行性 + RS + CST | 算不算得过来账 |
-| `/bmc 有人买吗` | 客户需求 + CS + VP | 客户真实需求 |
-| `/bmc 能进吗` | 市场可行性 + KP + CH | 市场时机与生态 |
-| `/bmc 渠道换吗` | CH + CR + KP | 渠道 ROI 评估 |
-| `/bmc 该涨价吗` | RS + 客户需求 + VP | 涨价可行性 |
-| `/bmc 复购怎么提` | CR + 客户需求 + RS | 复购瓶颈 |
-| `/bmc CAC 怎么降` | CH + KA + 客户需求 | 获客成本 |
-| `/bmc 飞轮` | 交付可行性 + KA + CR | 增长飞轮 |
-| `/bmc 咬合度` | 逻辑审查官 | 模块一致性 |
-| `/bmc 季报` | 14 角色全员 | 季度战略复盘 |
-
----
-
-## 四、上下文相关命令
-
-### `/bmc 对比`
-**触发场景**：对比两个商业模式 / 两个版本
-
-**模板**：
+**Example**:
 ```
-/bmc 对比
-A：[业务 1 描述]
-B：[业务 2 描述]
-维度：[全面 / 仅财务 / 仅客户 / 仅市场]
+/bmc canvas bmc
+Content: AI resume optimization subscription,
+CS=30yo internet job seekers, VP=30s resume fix,
+CH=Zhihu+Liepin, RS=monthly subscription, CST=AI compute
 ```
 
 ---
 
-### `/bmc 复盘`
-**触发场景**：诊断已经做过，要基于上次诊断看进化
+## 3. Shortcut Commands (10 high-frequency questions)
 
-**模板**：
+| Shortcut | Team Activated | Problem Solved |
+|----------|----------------|----------------|
+| `/bmc profitable` | Delivery Feasibility + RS + CST | Can the unit economics work? |
+| `/bmc want-it` | Customer Needs + CS + VP | Do customers really want it? |
+| `/bmc enter-market` | Market Feasibility + KP + CH | Market timing & ecosystem |
+| `/bmc switch-channel` | CH + CR + KP | Channel ROI evaluation |
+| `/bmc raise-price` | RS + Customer Needs + VP | Price increase feasibility |
+| `/bmc boost-retention` | CR + Customer Needs + RS | Repurchase bottleneck |
+| `/bmc cut-cac` | CH + KA + Customer Needs | Customer acquisition cost |
+| `/bmc flywheel` | Delivery Feasibility + KA + CR | Growth flywheel |
+| `/bmc coherence` | Coherence Auditor | Module consistency |
+| `/bmc quarterly` | All 14 roles | Quarterly strategy review |
+
+---
+
+## 4. Contextual Commands
+
+### `/bmc compare`
+**Trigger scenario**: Compare two business models / two versions
+
+**Template**:
 ```
-/bmc 复盘 [上次诊断日期]
-业务：[名称]
-本季度变化：[主要变化]
+/bmc compare
+A: [business 1 description]
+B: [business 2 description]
+Dimension: [full / financial only / customer only / market only]
 ```
 
 ---
 
-### `/bmc 行业 [行业名]`
-**触发场景**：在某个特定行业下做诊断（注入行业知识）
+### `/bmc retrospective`
+**Trigger scenario**: Previous diagnosis exists, want to see evolution
 
-**模板**：
+**Template**:
 ```
-/bmc 行业 [行业名]
-任务：[诊断需求]
-```
-
-**支持行业关键词**：
-- `SaaS` / `电商` / `内容` / `教育` / `医疗` / `金融` / `本地服务` / `硬件` / `出海` / `B2B` / `B2C` / `平台`
-
----
-
-## 五、命令速查表
-
-```
-📋 核心命令（7）
-  /bmc 完整诊断       → 全员深度体检
-  /bmc 专项诊断       → 锁定单模块突破
-  /bmc 拍砖           → 新想法快速验证
-  /bmc 客户需求       → JTBD 客户洞察
-  /bmc 财务体检       → 单位经济 + 飞轮
-  /bmc 市场体检       → 时机 + 生态 + 竞争
-  /bmc 画布           → mermaid 可视化
-
-📋 快捷命令（10）
-  /bmc 能赚钱吗       /bmc 有人买吗      /bmc 能进吗
-  /bmc 渠道换吗       /bmc 该涨价吗      /bmc 复购怎么提
-  /bmc CAC 怎么降     /bmc 飞轮          /bmc 咬合度
-  /bmc 季报
-
-📋 上下文命令（3）
-  /bmc 对比           → A vs B 模式对比
-  /bmc 复盘           → 跨季度进化分析
-  /bmc 行业 [行业名]   → 注入行业知识
+/bmc retrospective [previous diagnosis date]
+Business: [name]
+This quarter changes: [key changes]
 ```
 
 ---
 
-## 六、调用示例（直接复制）
+### `/bmc industry [name]`
+**Trigger scenario**: Diagnose within a specific industry (injects industry knowledge)
 
-### 完整诊断
+**Template**:
 ```
-/bmc 完整诊断
-业务：AI 简历优化订阅服务
-客户：30 岁以下求职期互联网人
-价值主张：30 秒把简历改成大厂范
-阶段：MVP 月营收 5 万
-困惑：CAC 涨到 200、复购率 8%、想涨价不敢涨
-团队：3 人
-合作：猎聘、知乎
-输出：完整 7 件套
+/bmc industry [industry-name]
+Task: [diagnosis request]
 ```
 
-### 拍砖
+**Supported industry keywords**:
+- `SaaS` / `ecommerce` / `content` / `education` / `healthcare` / `fintech` / `local-services` / `hardware` / `cross-border` / `B2B` / `B2C` / `platform`
+
+---
+
+## 5. Quick Reference
+
 ```
-/bmc 拍砖
-想法：AI 帮家长辅导小学生作业
-客户：一线城市双职工家庭，小学 1-3 年级
-市场：中国小学生 1 亿+
+📋 Core Commands (7)
+  /bmc full-diagnosis        → Full team deep check
+  /bmc focused-diagnosis     → Lock onto single module
+  /bmc stress-test           → Quick new idea validation
+  /bmc customer-needs        → JTBD customer insight
+  /bmc financial-checkup     → Unit economics + flywheel
+  /bmc market-checkup        → Timing + ecosystem + competition
+  /bmc canvas                → mermaid visualization
+
+📋 Shortcut Commands (10)
+  /bmc profitable        /bmc want-it        /bmc enter-market
+  /bmc switch-channel    /bmc raise-price    /bmc boost-retention
+  /bmc cut-cac           /bmc flywheel       /bmc coherence
+  /bmc quarterly
+
+📋 Contextual Commands (3)
+  /bmc compare              → A vs B model comparison
+  /bmc retrospective        → Cross-quarter evolution analysis
+  /bmc industry [name]      → Inject industry knowledge
 ```
 
-### 快捷命令
+---
+
+## 6. Usage Examples (Copy-Paste Ready)
+
+### Full Diagnosis
 ```
-/bmc 能赚钱吗
-业务：会员制 AI 写作工具
-当前 LTV：120
-当前 CAC：80
-当前复购率：45%
+/bmc full-diagnosis
+Business: AI Resume Optimization Service
+Customer: 30-under job-seeking internet workers
+Value proposition: 30-second resume makeover to FAANG standard
+Stage: MVP, monthly revenue 50K
+Confusion: CAC up to 200, repurchase only 8%, afraid to raise price
+Team: 3 people
+Partners: Liepin, Zhihu
+Output: full 7-piece
 ```
 
-### 行业注入
+### Stress Test
 ```
-/bmc 行业 SaaS
-完整诊断
-业务：项目管理 SaaS
+/bmc stress-test
+Idea: AI tutoring for elementary school kids
+Customer: dual-income families in tier-1 cities, grades 1-3
+Market: 100M+ elementary students in China
+```
+
+### Shortcut Command
+```
+/bmc profitable
+Business: AI writing tool with membership
+Current LTV: 120
+Current CAC: 80
+Current repurchase rate: 45%
+```
+
+### Industry Injection
+```
+/bmc industry SaaS
+full-diagnosis
+Business: Project management SaaS
 ...
 ```
 
-### 画布输出
+### Canvas Output
 ```
-/bmc 画布 flywheel
-业务：AI 简历优化
-内容：用户增长 → 数据优化 → 体验提升 → 复购增加 → 用户增长
+/bmc canvas flywheel
+Business: AI resume optimization
+Content: user growth → data optimization → experience improvement → repurchase → user growth
 ```
 
 ---
 
-## 七、命令组合技
+## 7. Command Combos
 
-**进阶用法**：多个命令组合，构造复杂任务
+**Advanced usage**: Combine multiple commands to construct complex tasks
 
-### 组合 1 · 拍砖 + 完整诊断
+### Combo 1 · Stress Test + Full Diagnosis
 ```
-/bmc 拍砖 AI 法律咨询工具
-（如果拍砖结论是"值得做"）
-→ /bmc 完整诊断
-业务：AI 法律咨询工具
+/bmc stress-test AI legal consultation tool
+(if verdict is "worth doing")
+→ /bmc full-diagnosis
+Business: AI legal consultation tool
 ...
 ```
 
-### 组合 2 · 多个专项诊断
+### Combo 2 · Multiple Focused Diagnoses
 ```
-/bmc 客户需求
-业务：XX 产品
-（输出 JTBD 后）
-→ /bmc 专项诊断 VP
-业务：XX 产品
-任务：基于 JTBD 重写价值主张
+/bmc customer-needs
+Business: XX product
+(after JTBD output)
+→ /bmc focused-diagnosis VP
+Business: XX product
+Task: Rewrite value proposition based on JTBD
 ```
 
-### 组合 3 · 对比 + 画布
+### Combo 3 · Compare + Canvas
 ```
-/bmc 对比
-A：会员制 vs B：单次付费
-（输出对比结论后）
-→ /bmc 画布 flywheel
-内容：会员制飞轮
+/bmc compare
+A: membership vs B: pay-per-use
+(after comparison conclusion)
+→ /bmc canvas flywheel
+Content: membership flywheel
 ```
 
 ---
 
-## 八、最常用的 3 个命令
+## 8. Top 3 Most-Used Commands
 
-如果老板只记 3 个：
+If you only remember 3:
 
-1. **`/bmc 完整诊断`** — 全面体检
-2. **`/bmc 拍砖`** — 想法验证
-3. **`/bmc 客户需求`** — 客户洞察
+1. **`/bmc full-diagnosis`** — Comprehensive health check
+2. **`/bmc stress-test`** — Idea validation
+3. **`/bmc customer-needs`** — Customer insight
 
-**这 3 个能覆盖 80% 的使用场景。**
+**These 3 cover 80% of use cases.**
+
+---
+
+## 📖 Other Languages
+
+- [中文版 (Chinese)](./commands.zh-CN.md)
