@@ -3,7 +3,7 @@
 > **一个由 14 个虚拟专家组成的虚拟团队，专门做商业模式画布（Business Model Canvas）的深度诊断。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.1.0-blue.svg)](./CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-1.2.3-blue.svg)](./CHANGELOG.md)
 [![Roles](https://img.shields.io/badge/Experts-14_角色-green.svg)](#-14-角色天团)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](#-贡献)
 
